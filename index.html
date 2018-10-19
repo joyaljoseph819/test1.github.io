@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<style type="text/css">
+body
+{
+ padding:0px;
+ margin:0px;
+ } 
+</style>
+<head>
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+</head>
+<link rel="stylesheet" href="css/loginstyle.css">
+<body style="background-color:transparent">
+<div id="page_screen">
+    &nbsp;
+</div>
+<div id="login_panel" style="background-color:transparent;border:0px;">
+<div id="modal-wrapper" class="modal">
+  
+  <form class="animate" action="/action_page.php" id="accesspanel" action="login" method="post">
+ 
+  <h1 id="litheader">REAPlay</h1>
+  <div class="inset">    
+    <p>
+      <input type="password" name="password" id="password" placeholder="Access code">
+      <input type="password" name="confirmpass" id="confirmpass" placeholder="Confirm Access Code" onkeyup="check_passwords()">
+    </p>
+    <input class="loginLoginValue" type="hidden" name="service" value="login" />  
+  <p class="p-container">
+    <input type="button" name="Reset" id="reset_passbtn" value="Reset Access Code">  
+  </p>
+</form>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>  
+</div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>window.onload=document.getElementById('modal-wrapper').style.display='block';</script>
+<script src="js/reset.js"></script>
+</body>
+</html>
